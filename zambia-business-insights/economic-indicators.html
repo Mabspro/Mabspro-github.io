@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economic Indicators - Zambia Business Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zambia Business Insights Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="economic-indicators.html">Economic Indicators</a></li>
+                    <li><a href="investment-guide.html">Investment Guide</a></li>
+                    <li><a href="featured-sectors.html">Featured Sectors</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="zambia-at-a-glance.html">Zambia at a Glance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="page-content">
+            <h1>Economic Indicators</h1>
+            <section id="key-indicators">
+                <h2>Key Economic Indicators</h2>
+                <div class="indicators-grid">
+                    <div class="indicator">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>GDP Growth</h3>
+                        <p>4.2% (2024 projection)</p>
+                        <p class="source">Source: Zambia Invest</p>
+                    </div>
+                    <div class="indicator">
+                        <i class="fas fa-percentage"></i>
+                        <h3>Inflation Rate</h3>
+                        <p>9.7% (latest data)</p>
+                        <p class="source">Source: African Development Bank Group</p>
+                    </div>
+                    <div class="indicator">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>Exchange Rate</h3>
+                        <p>1 USD = 19.2 ZMW</p>
+                        <p class="source">Source: Trading Economics</p>
+                    </div>
+                    <div class="indicator">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h3>Interest Rate</h3>
+                        <p>8.5% (Policy Rate)</p>
+                        <p class="source">Source: Bank of Zambia</p>
+                    </div>
+                    <div class="indicator">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Unemployment Rate</h3>
+                        <p>12.4% (estimate)</p>
+                        <p class="source">Source: World Bank</p>
+                    </div>
+                    <div class="indicator">
+                        <i class="fas fa-globe"></i>
+                        <h3>FDI Inflows</h3>
+                        <p>$3.8 billion (2023)</p>
+                        <p class="source">Source: Zambia Development Agency</p>
+                    </div>
+                </div>
+            </section>
+            <section id="gdp-growth-chart">
+                <h2>GDP Growth Trends</h2>
+                <div class="chart-container">
+                    <canvas id="gdp-chart"></canvas>
+                </div>
+            </section>
+            <section id="historical-gdp-growth">
+                <h2>Zambia GDP Growth Rate - Historical Data</h2>
+                <table id="gdp-table" class="gdp-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>GDP Growth (%)</th>
+                            <th>Annual Change</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gdp-table-body">
+                        <!-- Table rows will be dynamically inserted here by script.js -->
+                    </tbody>
+                </table>
+                <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ZM" target="_blank" rel="noopener noreferrer" class="world-bank-link">View More Data on World Bank</a>
+            </section>
+            <section id="economic-outlook">
+                <h2>Economic Outlook</h2>
+                <p>Zambia's economy is projected to continue its recovery path, supported by improved performance in the mining, agriculture, and tourism sectors. The government's commitment to economic reforms and debt restructuring is expected to boost investor confidence and contribute to sustainable growth.</p>
+                <p>Key factors influencing the economic outlook include:</p>
+                <ul>
+                    <li>Global commodity prices, particularly copper</li>
+                    <li>Implementation of structural reforms</li>
+                    <li>Climate conditions affecting agricultural output</li>
+                    <li>Regional and global economic trends</li>
+                </ul>
+                <p>For a more detailed analysis of Zambia's economic outlook, please refer to our latest economic report.</p>
+                <a href="reports.html" class="cta-button">View Economic Reports</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Zambia Business Insights provides comprehensive economic data and investment opportunities in Zambia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="economic-indicators.html">Economic Indicators</a></li>
+                    <li><a href="investment-guide.html">Investment Guide</a></li>
+                    <li><a href="featured-sectors.html">Featured Sectors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@zambiabusinessinsights.com</p>
+                <p>Phone: +260 XXX XXX XXX</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Zambia Business Insights. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zambia Business Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Zambia Business Insights Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="economic-indicators.html">Economic Indicators</a></li>
+                    <li><a href="investment-guide.html">Investment Guide</a></li>
+                    <li><a href="featured-sectors.html">Featured Sectors</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="zambia-at-a-glance.html">Zambia at a Glance</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Business Opportunities in Zambia</h1>
+            <p>Your gateway to investment insights and economic data in the heart of Southern Africa</p>
+            <a href="investment-guide.html" class="cta-button">Explore Investment Opportunities</a>
+        </div>
+    </div>
+    <main>
+        <section id="latest-news-weather">
+            <div class="section-header">
+                <h2>Latest Updates</h2>
+            </div>
+            <div class="news-weather-container">
+                <div class="news-ticker">
+                    <div class="ticker-header">
+                        <div class="live-indicator">LIVE</div>
+                        <h3>Breaking News</h3>
+                    </div>
+                    <div class="ticker-wrapper">
+                        <div class="ticker-item">Zambia's copper production increases by 10% in Q2 2023</div>
+                        <div class="ticker-item">New renewable energy project to boost rural electrification</div>
+                        <div class="ticker-item">Government announces tax incentives for foreign investors</div>
+                    </div>
+                </div>
+                <div class="weather-section">
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="weather-info">
+                        <span class="temperature">32°C</span>
+                        <span class="location">Lusaka</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="economic-indicators-preview">
+            <div class="section-header">
+                <h2>Key Economic Indicators</h2>
+                <a href="economic-indicators.html" class="view-all">View All</a>
+            </div>
+            <div class="indicators-grid">
+                <div class="indicator" id="gdp-growth">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>GDP Growth</h3>
+                    <p>4.2% (2024 projection)</p>
+                </div>
+                <div class="indicator" id="inflation-rate">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Inflation Rate</h3>
+                    <p>9.7% (latest data)</p>
+                </div>
+                <div class="indicator" id="exchange-rate">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Exchange Rate</h3>
+                    <p>1 USD = 19.2 ZMW</p>
+                </div>
+                <div class="indicator" id="interest-rate">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Interest Rate</h3>
+                    <p>8.5% (Bank of Zambia)</p>
+                </div>
+            </div>
+        </section>
+        <section id="featured-sectors-preview">
+            <div class="section-header">
+                <h2>Featured Sectors</h2>
+                <a href="featured-sectors.html" class="view-all">View All</a>
+            </div>
+            <div class="sector-container">
+                <div class="sector">
+                    <img src="images/mining-icon.png" alt="Mining Icon" class="sector-icon">
+                    <h3>Mining</h3>
+                    <p>Zambia is Africa's second-largest copper producer, with vast deposits of copper, cobalt, emeralds, and other minerals.</p>
+                    <a href="sector-mining.html" class="learn-more">Learn More</a>
+                </div>
+                <div class="sector">
+                    <img src="images/agriculture-icon.png" alt="Agriculture Icon" class="sector-icon">
+                    <h3>Agriculture</h3>
+                    <p>With abundant arable land and diverse climate zones, Zambia's agricultural sector presents immense potential.</p>
+                    <a href="sector-agriculture.html" class="learn-more">Learn More</a>
+                </div>
+                <div class="sector">
+                    <img src="images/energy-icon.png" alt="Energy Icon" class="sector-icon">
+                    <h3>Energy</h3>
+                    <p>Zambia's energy sector is ripe for investment, with a focus on renewable sources to meet growing demand.</p>
+                    <a href="sector-energy.html" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Zambia Business Insights provides comprehensive economic data and investment opportunities in Zambia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="economic-indicators.html">Economic Indicators</a></li>
+                    <li><a href="investment-guide.html">Investment Guide</a></li>
+                    <li><a href="featured-sectors.html">Featured Sectors</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@zambiabusinessinsights.com</p>
+                <p>Phone: +260 XXX XXX XXX</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Zambia Business Insights. All rights reserved.</p>
+            <p>Last updated: <span id="last-updated"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

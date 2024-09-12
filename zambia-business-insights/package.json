@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-smooth": "^1.0.0",
+    "chart.js": "^3.5.1",
+    "babel-standalone": "^6.26.0"
+  },
+  "name": "zambia-business-insights",
+  "version": "1.0.0",
+  "main": "Animate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
