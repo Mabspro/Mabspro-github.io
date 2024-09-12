@@ -393,11 +393,40 @@ footer {
     margin-right: auto;
 }
 
+/* Add this for screens less than 1200px */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%; /* Remove fixed width */
+        padding: 0 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 60px 0; /* Adjust for better mobile experience */
+    }
+
+    .hero-content h1 {
+        font-size: 2.4em; /* Reduce font size */
+    }
+
+    .indicators-grid, .sector-container {
+        gap: 20px; /* Reduce gap size */
+    }
+
+    .indicator, .sector {
+        min-width: 100%; /* Ensure full width in mobile */
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px; /* Smaller button size for mobile */
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
-        padding: 15px;
     }
 
     nav ul {
@@ -406,29 +435,17 @@ footer {
         justify-content: center;
     }
 
-    nav ul li {
-        margin: 5px 10px;
-    }
-
     .hero-section {
         height: auto;
-        padding: 80px 0;
-    }
-
-    .hero-content {
-        padding: 20px;
+        padding: 60px 0;
     }
 
     .hero-content h1 {
-        font-size: 2.2em;
+        font-size: 2em; /* Further reduce font size */
     }
 
     .news-weather-container {
         flex-direction: column;
-    }
-
-    .weather-section {
-        padding: 30px;
     }
 
     .indicators-grid, .sector-container {
