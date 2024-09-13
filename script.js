@@ -24,32 +24,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         setTimeout(animateNewsItem, 5000); // Change news every 5 seconds
     }
 
-    animateNewsItem();
+    if (tickerItems.length > 0) {
+        animateNewsItem();
+    }
 
     // Update last updated date
     const lastUpdatedElement = document.getElementById('last-updated');
     if (lastUpdatedElement) {
         const now = new Date();
         lastUpdatedElement.textContent = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    } else {
+        console.error("Element with ID 'last-updated' not found.");
     }
 
     // Add hover effect to indicators and sectors
     const indicators = document.querySelectorAll('.indicator');
     const sectors = document.querySelectorAll('.sector');
 
-    function addHoverEffect(elements) {
-        elements.forEach(element => {
-            element.addEventListener('mouseenter', () => {
-                element.style.transform = 'translateY(-5px)';
-                element.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.15)';
-            });
-            element.addEventListener('mouseleave', () => {
-                element.style.transform = 'translateY(0)';
-                element.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-            });
-        });
+    if (indicators.length === 0) {
+        console.warn("No indicators found.");
     }
 
-    addHoverEffect(indicators);
-    addHoverEffect(sectors);
+    if (sectors.length === 0) {
+        console.warn("No sectors found.");
+    }
+
+    // Additional hover effect logic can be added here if needed
 });
