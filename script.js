@@ -1,31 +1,20 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
 
-    // News Ticker Animation
+    // Continuous Scrolling News Ticker
+    const tickerWrapper = document.querySelector('.ticker-wrapper');
     const tickerItems = document.querySelectorAll('.ticker-item');
-    let currentItem = 0;
-
-    function animateNewsItem() {
-        if (tickerItems.length === 0) {
-            console.error("No ticker items found.");
-            return;
-        }
-
-        // Remove active class from all items
-        tickerItems.forEach((item) => item.classList.remove('active'));
-
-        // Add active class to current item
-        tickerItems[currentItem].classList.add('active');
-
-        // Move to the next item
-        currentItem = (currentItem + 1) % tickerItems.length;
-
-        // Loop the animation
-        setTimeout(animateNewsItem, 5000); // Change news every 5 seconds
-    }
 
     if (tickerItems.length > 0) {
-        animateNewsItem();
+        // Duplicate the ticker items to create an infinite scroll effect
+        tickerWrapper.innerHTML += tickerWrapper.innerHTML;
+
+        // Apply smooth scrolling effect using CSS
+        tickerWrapper.style.display = "flex";
+        tickerWrapper.style.whiteSpace = "nowrap";
+        tickerWrapper.style.animation = "tickerScroll 15s linear infinite";
+    } else {
+        console.error("No ticker items found.");
     }
 
     // Update last updated date

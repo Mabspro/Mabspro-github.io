@@ -198,19 +198,34 @@ section {
     100% { opacity: 1; }
 }
 
-.ticker-wrapper {
-    position: relative;
-    height: 30px;
-    overflow: hidden;
+/* Continuous Scrolling Animation */
+@keyframes tickerScroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.ticker-item {
-    position: absolute;
+/* Ticker Wrapper Styling */
+.ticker-wrapper {
+    display: flex;
+    overflow: hidden;
     white-space: nowrap;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 0.5s ease, transform 15s linear;
-    font-size: 1em;
+}
+
+/* Ticker Item Styling */
+.ticker-item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 1.2rem; /* Increased font size */
+    font-family: 'Arial', sans-serif; /* Updated font family for better readability */
+    color: #ffffff; /* White text for better contrast */
+    background: #007bff; /* Blue background for emphasis */
+    margin-right: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .ticker-item.active {
