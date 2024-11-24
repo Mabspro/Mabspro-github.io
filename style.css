@@ -546,3 +546,60 @@ footer {
     }
 }
 
+.contact-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.donate-button {
+    background-color: #ff8800;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+.donate-button i {
+    margin-right: 0.5rem;
+}
+
+.donate-button:hover {
+    background-color: #cc6e00;
+}
