@@ -204,15 +204,16 @@ section {
         transform: translateX(0%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
 /* Ticker Wrapper Styling */
 .ticker-wrapper {
-    display: flex;
+    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
+    animation: tickerScroll 20s linear infinite;
 }
 
 /* Ticker Item Styling */

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // Apply smooth scrolling effect using CSS
         tickerWrapper.style.display = "flex";
         tickerWrapper.style.whiteSpace = "nowrap";
-        tickerWrapper.style.animation = "tickerScroll 15s linear infinite";
+        tickerWrapper.style.animation = "tickerScroll 12s linear infinite";
     } else {
         console.error("No ticker items found.");
     }
