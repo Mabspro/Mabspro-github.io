@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
+    console.log(tickerWrapper.innerHTML);
+
 
     // Continuous Scrolling News Ticker
     const tickerWrapper = document.querySelector('.ticker-wrapper');

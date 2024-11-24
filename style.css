@@ -211,7 +211,7 @@ section {
 /* Ticker Wrapper Styling */
 .ticker-wrapper {
     display: inline-block;
-    overflow: hidden;
+    overflow: visible;
     white-space: nowrap;
     animation: tickerScroll 20s linear infinite;
 }
