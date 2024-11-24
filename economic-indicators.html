@@ -73,12 +73,22 @@
                     </div>
                 </div>
             </section>
+            
+            <!-- Updated GDP Growth Trends Section with Embedded Chart -->
             <section id="gdp-growth-chart">
                 <h2>GDP Growth Trends</h2>
                 <div class="chart-container">
-                    <canvas id="gdp-chart"></canvas>
+                    <p>The chart below highlights Zambia's GDP growth trends over time, based on data from DataCommons.org:</p>
+                    <iframe 
+                        src="https://datacommons.org/tools/timeline#&place=country/ZMB&statsVar=GrowthRate_Amount_EconomicActivity_GrossDomesticProduction" 
+                        width="100%" 
+                        height="500" 
+                        style="border: none;" 
+                        loading="lazy">
+                    </iframe>
                 </div>
             </section>
+
             <section id="historical-gdp-growth">
                 <h2>Zambia GDP Growth Rate - Historical Data</h2>
                 <table id="gdp-table" class="gdp-table">
@@ -95,6 +105,7 @@
                 </table>
                 <a href="https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=ZM" target="_blank" rel="noopener noreferrer" class="world-bank-link">View More Data on World Bank</a>
             </section>
+            
             <section id="economic-outlook">
                 <h2>Economic Outlook</h2>
                 <p>Zambia's economy is projected to continue its recovery path, supported by improved performance in the mining, agriculture, and tourism sectors. The government's commitment to economic reforms and debt restructuring is expected to boost investor confidence and contribute to sustainable growth.</p>
