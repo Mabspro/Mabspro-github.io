@@ -76,7 +76,7 @@ main {
 
 /* Hero Section Styles */
 .hero-section {
-    background-image: url('images/zambia-skyline.jpg');
+    background-image: url('images/zambia-hero_image.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
